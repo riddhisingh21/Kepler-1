@@ -1,0 +1,4 @@
+# Optional dependencies for the sentence-transformer classifier backend.
+# Enable with: CHATBOT_CLASSIFIER_BACKEND=embeddings
+# Pulls in torch + transformers; kept separate to keep the default install fast.
+sentence-transformers==2.7.0

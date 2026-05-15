@@ -1,0 +1,118 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hi", "hello", "hey", "good morning", "good evening",
+        "hi there", "hello there", "greetings", "what's up", "howdy"
+      ],
+      "responses": [
+        "Hello! I'm Kepler 1, how can I help you today?",
+        "Hi there! What can I do for you?",
+        "Hey! Nice to see you. Ask me anything."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "bye", "goodbye", "see you", "see you later", "talk to you later",
+        "i have to go", "catch you later", "good night"
+      ],
+      "responses": [
+        "Goodbye! Have a great day.",
+        "See you soon!",
+        "Bye! Come back anytime."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "thanks", "thank you", "thanks a lot", "thank you so much",
+        "appreciate it", "much appreciated", "thx"
+      ],
+      "responses": [
+        "You're welcome!",
+        "Happy to help!",
+        "Anytime!"
+      ]
+    },
+    {
+      "tag": "about",
+      "patterns": [
+        "who are you", "what are you", "what is your name", "your name",
+        "tell me about yourself", "introduce yourself"
+      ],
+      "responses": [
+        "I'm Kepler 1, a chatbot built with NLP, Django and React.",
+        "I'm Kepler 1 - your conversational assistant powered by NLP."
+      ]
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "help", "i need help", "can you help me", "what can you do",
+        "how do you work", "what are your features"
+      ],
+      "responses": [
+        "I can chat with you, recognize intents, and answer common questions. Try saying hello, asking about me, or telling me a joke!",
+        "Ask me anything! I understand greetings, small talk, jokes, and more."
+      ]
+    },
+    {
+      "tag": "hours",
+      "patterns": [
+        "what are your hours", "when are you open", "are you available",
+        "working hours", "are you online", "are you up"
+      ],
+      "responses": [
+        "I'm available 24/7 - feel free to chat anytime.",
+        "Always online. I never sleep!"
+      ]
+    },
+    {
+      "tag": "weather",
+      "patterns": [
+        "weather", "what's the weather", "is it raining", "weather today",
+        "temperature", "how's the weather"
+      ],
+      "responses": [
+        "I don't have a live weather feed yet, but you can check a weather service for accurate info.",
+        "I can't fetch real-time weather, but I hope it's sunny where you are!"
+      ]
+    },
+    {
+      "tag": "joke",
+      "patterns": [
+        "tell me a joke", "joke", "make me laugh", "say something funny",
+        "do you know any jokes", "another joke"
+      ],
+      "responses": [
+        "Why did the developer go broke? Because he used up all his cache!",
+        "I told my computer I needed a break, and it said: 'No problem, I'll go to sleep.'",
+        "Why do Python programmers prefer dark mode? Because light attracts bugs."
+      ]
+    },
+    {
+      "tag": "creator",
+      "patterns": [
+        "who made you", "who created you", "who built you", "your developer",
+        "who is your author"
+      ],
+      "responses": [
+        "I was built as a student project showcasing NLP, Django and React.",
+        "My creator built me to demonstrate intent recognition and full-stack web development."
+      ]
+    },
+    {
+      "tag": "tech",
+      "patterns": [
+        "what tech do you use", "tech stack", "technologies", "what are you built with",
+        "what languages do you use"
+      ],
+      "responses": [
+        "I'm built with Python, NLTK, scikit-learn, Django REST Framework on the backend and React on the frontend.",
+        "Backend: Django + DRF + NLTK + scikit-learn. Frontend: React + Vite."
+      ]
+    }
+  ]
+}
