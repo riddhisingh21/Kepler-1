@@ -110,10 +110,17 @@ SPECTACULAR_SETTINGS = {
     "SERVE_INCLUDE_SCHEMA": False,
 }
 
+DEFAULT_CORS_ORIGINS = ",".join(
+    [
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+        "https://kepler-1.vercel.app",
+    ]
+)
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
-    "http://127.0.0.1:5173",
-    "https://your-frontend.vercel.app",
+    origin.strip()
+    for origin in os.environ.get("DJANGO_CORS_ALLOWED_ORIGINS", DEFAULT_CORS_ORIGINS).split(",")
+    if origin.strip()
 ]
 
 CHATBOT_MODEL_PATH = BASE_DIR / "chatbot" / "nlp" / "model.joblib"
